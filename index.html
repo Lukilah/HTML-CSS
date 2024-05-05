@@ -3,69 +3,117 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Box Model</title>
+  <title>CSS Flag Project</title>
   <style>
-    /* Write your CSS code here */
-    div{
-      width: 200px;
-      height: 200px;
+    /* Write your CSS Code here */
+    /*.flag{
+      width:900px;
+      height:600px;
+      background-color: #CE1126;
     }
 
-    p{
-      margin:0px;
+    .flag > div p{
+      color: white;
+      text-align: center;
+      font-size: 2.8rem;
+      
     }
 
-    .first-div{
-      background-color: cadetblue;
-      border: 10px solid black;
-      padding:20px;
-    }
+   .flag > div{
+    width: 900px;
+    height:300px;
+    top:180px;
+    background-color: #002868;
+    color:white;
+    position: absolute;
 
-    .second-div{
-      background-color:gold;
-      border-top:20px solid;
-      border-bottom: 20px solid;
-      border-left: 10px solid;
-      border-right: 10px solid;
-      margin-left: 49%;
-    }
+   }
 
-    .third-div{
-      background-color:indianred;
-      border: 10px solid black;
-      margin-left: 7.3%;
-    }
+   .flag > div div p{
+    width:200px;
+    height:200px;
+    color:black;
+    background-color:white;
+    border-radius: 50%;
+    margin-left:380px;
+    margin-top: 50px;
+   }*/
+
+   .flag{
+    width:900px;
+    height: 600px;
+    background-color:#CE1126;
+    position:relative;
+   }
+
+   .flag > p{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    
+   }
+
+   /*.flag > div {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 360px;
+    margin-top: 100px;
+   }*/
+   
+  .flag > div{
+    height:300px;
+    background-color: #002868;
+    width:100%;
+    position:absolute;
+    top:150px;
+  }
+
+  .flag > div > div {
+    background-color: white;
+    height: 200px;
+    width:200px;
+    position: absolute;
+    border-radius: 50%;
+    top:50px;
+    left:350px;
+  }
+
+  p{
+    font-size:5rem;
+    color:white;
+    text-align: center;
+    padding:0;
+    margin:0px;
+  }
+
+  .flag > div div p{
+    color: black;
+  }
 
   </style>
 </head>
 
-<body>
-<div class="first-div">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
-    id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
-    dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>
-</div>
-
-<div class="second-div"></div>
-
-<div class="third-div"></div>
-
-  <!-- TODOs:
-1. Create 3 Boxes using the div element.
-2. Set their sizes to 200px heigh by 200px wide.
-3. Set different background colors for each of the boxes (I used cadetblue, gold and indianred).
-4. Add a paragraph <p> element into the first div and add the following words:
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
-    id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
-    dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.
-5. Set the 1st div to have 20px padding all around with a black 10px border.
-6. Fix the style of the <p> element to remove all margins.
-Hint: Use the CSS inspector in Chrome.
-7. Set the 2nd div to have a 20px border on top and bottom and 10px border left and right. (See goal image)
-8. Set the 3rd div to have a 10px border 
-9. Set the margins for the divs so that each box corner touches the other. (See the goal image)
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
 -->
 
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
